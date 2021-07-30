@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!--STYLE-->
-    <link rel="stylesheet" href="./estilos/media-queries.css">
     <link rel="stylesheet" href="./estilos/style.css">
 
 </head>
@@ -42,7 +42,7 @@
                 <img src="./images/icon-error.svg" alt="icon error" class="icon-error icon-error1">
             </div>
 
-            <p class="msg-error">
+            <p class="msg-error msg-error1">
                 First Name cannot be empty
             </p>
 
@@ -52,7 +52,7 @@
                 <img src="./images/icon-error.svg" alt="icon error" class="icon-error icon-error2">
             </div>
 
-            <p class="msg-error">
+            <p class="msg-error msg-error2">
                 Last Name cannot be empty
             </p>
 
@@ -63,21 +63,21 @@
                 <img src="./images/icon-error.svg" alt="icon error" class="icon-error icon-error3">
             </div>
 
-            <p class="msg-error">
+            <p class="msg-error msg-error3">
                 Looks like this is not an email
             </p>
 
             <div class="input-container">
-                <input type="password" name="pass" id="pass" placeholder="Password">
+                <input type="password" name="pass" id="pass" maxlength="8" placeholder="Password">
 
                 <img src="./images/icon-error.svg" alt="icon error" class="icon-error icon-error4">
             </div>
 
-            <p class="msg-error">
+            <p class="msg-error msg-error4">
                 Password cannot be empty
             </p>
 
-            <input type="submit" value="Claim your free trial" id="submit">
+            <input type="submit" value="Claim your free trial" id="submit" onclick="ValidForm()">
 
             <p>
                 By clicking the button, you are agreeing to our <strong>Terms and Services</strong>

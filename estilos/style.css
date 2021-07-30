@@ -160,3 +160,69 @@ body{
 .container #reference a:hover{
     color: var(--blue);
 }
+
+
+@media screen and (min-width: 750px){
+    :root{
+        font-size: 13px;
+    }
+    body,html{
+        width: 100vw;
+        height: 100vh;
+    }
+    body{
+        background-image: url(../images/bg-intro-desktop.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "text btn"
+        "text form"
+        "reference reference";
+        max-width: 800px;
+        margin: 0;
+    }
+
+    .button{
+        grid-area: btn;
+    }
+
+    .text{
+        grid-area: text;
+        width: 110%;
+        margin-left: -2rem;
+    }
+    .container .text h1{
+        margin: 0;
+        margin-top: 40%;
+        text-align: left;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        width: 100%;
+    }
+    .container .text p{
+        margin: 0;
+        margin-top: 2rem;
+        text-align: left;
+        width: 100%;
+        font-size: 0.97rem;
+    }
+    
+    form{
+        grid-area: form;
+        width: 90%;
+        margin-left: 2.6rem;
+    }
+    .container .button{
+        width: 91%;
+        margin-left: 2.6rem;
+    }
+    .container #reference{
+        grid-area: reference;
+        margin-top: 5rem;
+    }
+}
