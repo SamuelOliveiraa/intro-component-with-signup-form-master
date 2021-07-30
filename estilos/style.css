@@ -1,13 +1,117 @@
 /* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* VARIABLES */
+:root{
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%) ;
+    --grayish-blue: hsl(246, 25%, 77%);
+    --red: hsl(0, 100%, 74%) ;
+    --green: hsl(154, 59%, 51%);
+    --white: hsl(0, 0%, 100%);
+}
 
 /* BODY */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: var(--red);
+    color: var(--white);
+}
 
 /* CONTAINER */
+.container{
+    width: 85%;
+    margin: 2.5rem auto;
+}
 
 /* TEXT */
+.container .text{
+    text-align: center;
+}
+.container .text h1{
+    font-size: 1.8rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+.container .text p{
+    width: 78%;
+    font-size: 1.1rem;
+    margin: auto;
+    margin-bottom: 2.3rem;
+    line-height: 1.8rem;
+}
 
 /* BUTTON */
-
+.button{
+    width: 100%;
+    background-color: var(--blue);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 7px 1px rgba(0, 0, 0, 0.212);
+}
+.button p{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
 /* FORM */
+.container form{
+    background-color: var(--white);
+    padding: 1.4rem;
+    color: var(--grayish-blue);
+    border-radius: 0.5rem;
+    box-shadow: 0 7px 1px rgba(0, 0, 0, 0.212);
+}
+.container form input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grayish-blue);
+    margin-top: 1rem;
+}
+.container form input::-webkit-input-placeholder {
+    color: var(--dark-blue);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.container form #name{
+    margin-top: 0;
+}
+.container form #submit{
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.3rem;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.212);
+}
+.container form #submit:hover{
+    background-color: hsl(154, 78%, 52%);
+    cursor: pointer;
+}
+.container form p{
+    font-size: 0.8rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.container form p strong{
+    color: var(--red);
+}
+.container form .msg-error{
+    color: var(--red);
+    text-align: right;
+    width: 100%;
+    font-size: 0.68rem;
+    margin-top: 0.5rem;
+    display: none;
+}
