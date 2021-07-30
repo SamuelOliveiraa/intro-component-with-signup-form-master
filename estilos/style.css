@@ -49,7 +49,7 @@ body{
 }
 
 /* BUTTON */
-.button{
+.container .button{
     width: 100%;
     background-color: var(--blue);
     padding: 1rem;
@@ -58,11 +58,16 @@ body{
     margin-bottom: 1rem;
     box-shadow: 0 7px 1px rgba(0, 0, 0, 0.212);
 }
-.button p{
+.container .button:hover{
+    background-color: hsl(248, 50%, 57%);
+    cursor: pointer;
+}
+.container .button p{
     display: inline-block;
     width: 50%;
     text-align: center;
 }
+
 /* FORM */
 .container form{
     background-color: var(--white);
@@ -100,12 +105,39 @@ body{
 .container form p{
     font-size: 0.8rem;
     width: 85%;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 .container form p strong{
     color: var(--red);
+}
+
+/* MESAGE ERROR */
+.container form .input-container{
+    position: relative;
+}
+.container form .input-container .icon-error{
+    position: absolute;
+    width: 18.75px;
+    display: none;
+}
+.container form .input-container .icon-error1{
+    right: 5%;
+    top: 29%;
+}
+.container form .input-container .icon-error2{
+    right: 5%;
+    top: 45%;
+}
+.container form .input-container .icon-error3{
+    right: 5%;
+    top: 45%;
+}
+.container form .input-container .icon-error4{
+    right: 5%;
+    top: 45%;
 }
 .container form .msg-error{
     color: var(--red);
@@ -114,4 +146,17 @@ body{
     font-size: 0.68rem;
     margin-top: 0.5rem;
     display: none;
+}
+
+/* REFERENCE */
+.container #reference{
+    margin-top: 2rem;
+    text-align: center;
+}
+.container #reference a{
+    text-decoration: none;
+    color: var(--white);
+}
+.container #reference a:hover{
+    color: var(--blue);
 }
