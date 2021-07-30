@@ -1,0 +1,44 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+    --blue: hsl(248, 32%, 49%);
+    --red: hsl(0, 100%, 74%) ;
+    --white: hsl(0, 0%, 100%);
+}
+
+/* BODY */
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 4rem;
+}
+p{
+    margin-top: 5rem;
+}
+p a{
+    text-decoration: none;
+    color: var(--white);
+}
+p a:hover{
+    color: var(--blue);
+}

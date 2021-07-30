@@ -70,8 +70,6 @@ function ValidForm() {
         alert('Check the data and try again!!')
     }else if(!email.checkValidity()){
         alert('Check the data and try again!!')
-    }else{
-        alert('Thanks')
     }
 
     document.location.reload(true);
