@@ -31,9 +31,13 @@ body{
 }
 h1{
     margin: 4rem;
+    margin-bottom: 1rem;
 }
-p{
+#p1{
     margin-top: 5rem;
+}
+#p2{
+    margin-top: 8rem;
 }
 p a{
     text-decoration: none;

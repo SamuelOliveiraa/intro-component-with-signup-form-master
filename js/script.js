@@ -9,6 +9,7 @@ var msgerror1 = document.querySelector('.msg-error1')
 var msgerror2 = document.querySelector('.msg-error2')
 var msgerror3 = document.querySelector('.msg-error3')
 var msgerror4 = document.querySelector('.msg-error4')
+var form = document.querySelector('#form')
 
 var nome = document.querySelector('#name')
 nome.addEventListener('blur', function(){
@@ -64,13 +65,17 @@ password.addEventListener('blur', function() {
     }
 })
 
-function ValidForm() {
+var btn = document.getElementById("submit")
+btn.addEventListener("click", function () {
 
     if(nome.value == "" || last.value == "" || email.value == "" || password.value == "" || password.value == "" && email.value == "" && last.value == "" && nome.value == ""){
         alert('Check the data and try again!!')
+        document.location.reload(true);
     }else if(!email.checkValidity()){
         alert('Check the data and try again!!')
+        document.location.reload(true);
+    }else{
+        window.location.href = "./cadastro.html"
     }
 
-    document.location.reload(true);
-}
+})
