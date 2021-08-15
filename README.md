@@ -18,6 +18,7 @@ My biggest difficulty in this challenge was being able to validate the form usin
 * CSS3
 * JavaScript
 * Media-queries
+* Responsive Website
 
 ## Access My Resolution 💻
 
