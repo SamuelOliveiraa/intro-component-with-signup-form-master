@@ -77,5 +77,4 @@ btn.addEventListener("click", function () {
     }else{
         window.location.href = "./cadastro.html"
     }
-
 })
